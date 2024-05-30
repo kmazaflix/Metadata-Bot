@@ -26,7 +26,7 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(
         admin) else admin for admin in os.environ.get('ADMIN', '').split()]  # ⚠️ Required
     
-    FORCE_SUB = os.environ.get("FORCE_SUB", "@StreamFlix_Update") # ⚠️ Required Username without @
+    FORCE_SUB = os.environ.get("FORCE_SUB", "StreamFlix_Update") # ⚠️ Required Username without @
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '10'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
@@ -48,7 +48,7 @@ Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ
 
     ABOUT_TXT = """<b>╭───────────⍟
 • ᴍy ɴᴀᴍᴇ : {}
-• ᴜᴘᴅᴀᴛᴇꜱ : <a href=S@treamFlix_Update>StreamFlix ʙᴏᴛꜱ</a>
+• ᴜᴘᴅᴀᴛᴇꜱ : <a href=@StreamFlix_Update>StreamFlix ʙᴏᴛꜱ</a>
 ╰───────────────⍟ """
 
     HELP_TXT = """

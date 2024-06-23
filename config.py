@@ -7,13 +7,13 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "19495376")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "62e8e48d4cc1dc6f120c0cf5961ba8ab")  # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")  # ⚠️ Required
 
     # premium 4g renaming client
-    STRING_API_ID = os.environ.get("STRING_API_ID", "")
-    STRING_API_HASH = os.environ.get("STRING_API_HASH", "")
+    STRING_API_ID = os.environ.get("STRING_API_ID", "19495376")
+    STRING_API_HASH = os.environ.get("STRING_API_HASH", "62e8e48d4cc1dc6f120c0cf5961ba8ab")
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
     # database config
